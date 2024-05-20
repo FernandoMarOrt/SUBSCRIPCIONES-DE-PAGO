@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% del alto de la ventana */
+}
+
+header#cabecera {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+div.planes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+div.plan {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea los elementos del plan de manera que haya espacio entre ellos */
+    text-align: center;
+    margin: 1rem 0;
+}
+
+div.plan h2 {
+    margin-bottom: 1.5rem;
+}
+
+p.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+p.description {
+    margin-top: 10px;
+}
+
+.plan ul {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.plan ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+    list-style: none;
+    padding: 0.4rem 0;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+p#firma {
+    padding: 1rem;
+}
+
+p#firma>a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+@media (min-width: 1024px) {
+    /* Redimension tablet */
+    main {
+       max-width: 1700px;
+    }
+
+
+    div.planes {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    div.plan {
+        flex: 0 28%;
+        font-size: 20px;
+    }
+
+    div.plan h2 {
+        font-size: 30px;
+    }
+    
+    p.price {
+        font-size: 25px;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    p.description {
+        margin-bottom: 5rem;
+    }
+
+    
+}
